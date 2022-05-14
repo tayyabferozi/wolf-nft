@@ -143,8 +143,8 @@
         }
 
         @media screen and (max-width: 991px) {
-          &,
-          &.active {
+          &:not(.btn),
+          &.active:not(.btn) {
             color: #000;
           }
 
