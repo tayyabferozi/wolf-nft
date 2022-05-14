@@ -1,0 +1,13 @@
+%transitioned {
+  transition: 0.4s ease;
+}
+
+@mixin gap($size: 20px, $y: false) {
+  & > * + * {
+    @if $y {
+      margin-top: $size;
+    } @else {
+      margin-left: $size;
+    }
+  }
+}
